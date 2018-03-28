@@ -45,14 +45,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="BookPropertiesEditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="BookPropertiesEditForm.Designer.cs">
+      <DependentUpon>BookPropertiesEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryChooser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CategoryChooser.Designer.cs">
+      <DependentUpon>CategoryChooser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryEditor.cs" />
+    <Compile Include="CategoryEditor.Designer.cs">
+      <DependentUpon>CategoryEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel.cs" />
+    <Compile Include="MDIForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIForm.Designer.cs">
+      <DependentUpon>MDIForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BookPropertiesEditForm.resx">
+      <DependentUpon>BookPropertiesEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIForm.resx">
+      <DependentUpon>MDIForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +90,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -74,6 +106,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\criminal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fantasy.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,9 +14,10 @@ namespace PAIN_WinForms
         [STAThread]
         static void Main()
         {
+            BookList model = new BookList();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MDIForm(model));
         }
     }
 }
